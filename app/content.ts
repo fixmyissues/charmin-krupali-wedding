@@ -19,7 +19,7 @@ export const gu = {
     title: "તારીખ જાણવા સીલ તોડો", open: ["સીલ", "તોડો"], close: ["સીલ", "બંધ કરો"],
     date: "૦૬ ડિસેમ્બર ૨૦૨૬",
     lines: ["રવિવાર, સંવત ૨૦૮૩ ના કારતક વદ-૧૩", "હસ્ત મેળાપ સવારે ૧૦:૦૦ કલાકે", "કોલવડા હાઈસ્કૂલ પટાંગણ, કોલવડા, તા. વિજાપુર"],
-    blessing: "પ્રભુતામાં પગલાં માંડી રહેલ મંગલમયી યુગલને આશીર્વાદ આપવા પધારી શોભામાં અભિવૃધ્ધિ કરશોજી.",
+    blessing: "પ્રભુતામાં પગલાં માંડી રહેલ મંગલમયી યુગલને આ શુભ અવસરે આશીર્વાદ આપવા પધારી શોભામાં અભિવૃધ્ધિ કરશોજી.",
   },
   events: {
     title: "માંગલિક પ્રસંગો", prev: "પાછળ", next: "આગળ", prevLabel: "પાછળનું પાનું", nextLabel: "આગળનું પાનું",
@@ -31,6 +31,7 @@ export const gu = {
       { title: "જાન પ્રસ્થાન", time: "રવિવાર, ૦૬-૧૨-૨૦૨૬ · સવારે ૫:૩૦", note: "રામપુરાથી નીકળી કોલવડા જશે" },
       { title: "હસ્ત મેળાપ", time: "રવિવાર, ૦૬-૧૨-૨૦૨૬ · સવારે ૧૦:૦૦", note: "કોલવડા હાઈસ્કૂલ પટાંગણ" },
     ],
+    main: 5,
   },
   venue: {
     title: "પ્રસંગ સ્થળ", maps: "Google Maps માં ખોલો", mapTitle: "અમારા નિવાસસ્થાનનો નકશો",
@@ -48,6 +49,16 @@ export const gu = {
     title: "આપનો જવાબ", name: "આપનું નામ", contact: "મોબાઇલ અથવા ઇમેઇલ", attending: "આપ પધારશો?", yes: "હા, જરૂર", no: "ના, માફ કરશો",
     guests: "કુલ સભ્યો", message: "સંદેશ", send: "જવાબ મોકલો",
     wa: { head: "ચિ. ચાર્મિન & ચિ. કૃપાલિ ના શુભ લગ્ન માટે જવાબ", name: "નામ", contact: "સંપર્ક", attending: "પધારશો", guests: "કુલ સભ્યો", message: "સંદેશ" },
+  },
+  // Shown only on /reception pages, for guests invited to the Surat reception.
+  reception: {
+    title: "સત્કાર સમારંભ", heroDate: "૧૨-૧૨-૨૦૨૬, શનિવાર", date: "૧૨ ડિસેમ્બર ૨૦૨૬",
+    lines: ["શનિવાર, સાંજે ૬:૩૦ કલાકે", "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી, અમીઝરા-બમરોલી, સુરત"],
+    blessing: "સાથેના લગ્ન પ્રસંગ નિમિત્તે યોજેલ “સત્કાર સમારંભમાં” નવદંપતિને અંતરના આશીર્વાદ આપવા પધારવા ભાવભીનું નિમંત્રણ છે.",
+    rsvpHead: "ચિ. ચાર્મિન & ચિ. કૃપાલિ ના સત્કાર સમારંભ માટે જવાબ",
+    address: "૪૭, અમીઝરા રેસીડેન્સી, ગોકુલધામ શેરી, બમરોલી રોડ હરિઓમ ઈન્ડ. બાજુમાં વડોદ સુરત.",
+    event: { title: "સત્કાર સમારંભ", time: "શનિવાર, ૧૨-૧૨-૨૦૨૬ · સાંજે ૬:૩૦", note: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી, અમીઝરા-બમરોલી, સુરત" },
+    place: { event: "સત્કાર સમારંભ", name: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી", place: "હરિઓમ ઈન્ડ. સોસાયટી-૩, શ્રી ઉમિયા માતાજી મંદિરની પાછળ, અમીઝરા-બમરોલી, સુરત", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "" },
   },
   footer: { title: "ચિ. ચાર્મિન & ચિ. કૃપાલિ", welcome: "છગનભા પરિવાર આપનું હાર્દિક સ્વાગત કરે છે." },
 };
@@ -82,6 +93,7 @@ export const en: Content = {
       { title: "Wedding Procession Departure", time: "Sunday, 06-12-2026 · 5:30 AM", note: "From Ramapura towards Kolvada" },
       { title: "Hasta Melap", time: "Sunday, 06-12-2026 · 10:00 AM", note: "Kolvada High School Ground" },
     ],
+    main: 5,
   },
   venue: {
     title: "Venues", maps: "Open in Google Maps", mapTitle: "Map to our home",
@@ -99,6 +111,15 @@ export const en: Content = {
     title: "Your Reply", name: "Your name", contact: "Mobile or email", attending: "Will you attend?", yes: "Yes, with joy", no: "Sorry, can't make it",
     guests: "Number of guests", message: "Message", send: "Send reply",
     wa: { head: "RSVP for the wedding of Charmin & Krupali", name: "Name", contact: "Contact", attending: "Attending", guests: "Guests", message: "Message" },
+  },
+  reception: {
+    title: "Satkar Samarambh", heroDate: "Saturday, 12-12-2026", date: "12 December 2026",
+    lines: ["Saturday, 6:30 PM", "Shri Bavan Bavis Kadva Patidar Samaj Wadi, Amijhara-Bamroli, Surat"],
+    blessing: "You are warmly invited to the “Satkar Samarambh” held on the occasion of the wedding, to bless the newly wed couple with your presence.",
+    rsvpHead: "RSVP for the Satkar Samarambh of Charmin & Krupali",
+    address: "47, Amijhara Residency, Gokuldham Sheri, Bamroli Road, beside Hariom Ind., Vadod, Surat.",
+    event: { title: "Satkar Samarambh (Reception)", time: "Saturday, 12-12-2026 · 6:30 PM", note: "Shri Bavan Bavis Kadva Patidar Samaj Wadi, Amijhara-Bamroli, Surat" },
+    place: { event: "Satkar Samarambh (Reception)", name: "Shri Bavan Bavis Kadva Patidar Samaj Wadi", place: "Hariom Ind. Society-3, behind Shri Umiya Mataji Mandir, Amijhara-Bamroli, Surat", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "" },
   },
   footer: { title: "Charmin & Krupali", welcome: "The Chhaganbha family warmly welcomes you." },
 };
