@@ -58,7 +58,7 @@ export const gu = {
     rsvpHead: "ચિ. ચાર્મિન & ચિ. કૃપાલિ ના સત્કાર સમારંભ માટે જવાબ",
     address: "૪૭, અમીઝરા રેસીડેન્સી, ગોકુલધામ શેરી, બમરોલી રોડ હરિઓમ ઈન્ડ. બાજુમાં વડોદ સુરત.",
     event: { title: "સત્કાર સમારંભ", time: "શનિવાર, ૧૨-૧૨-૨૦૨૬ · સાંજે ૬:૩૦", note: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી, અમીઝરા-બમરોલી, સુરત" },
-    place: { event: "સત્કાર સમારંભ", name: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી", place: "હરિઓમ ઈન્ડ. સોસાયટી-૩, શ્રી ઉમિયા માતાજી મંદિરની પાછળ, અમીઝરા-બમરોલી, સુરત", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "" },
+    place: { event: "સત્કાર સમારંભ", name: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી", place: "હરિઓમ ઈન્ડ. સોસાયટી-૩, શ્રી ઉમિયા માતાજી મંદિરની પાછળ, અમીઝરા-બમરોલી, સુરત", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "https://maps.app.goo.gl/7fJrXMhaiRdt4sFa7" },
   },
   footer: { title: "ચિ. ચાર્મિન & ચિ. કૃપાલિ", welcome: "છગનભા પરિવાર આપનું હાર્દિક સ્વાગત કરે છે." },
 };
@@ -119,7 +119,7 @@ export const en: Content = {
     rsvpHead: "RSVP for the Satkar Samarambh of Charmin & Krupali",
     address: "47, Amijhara Residency, Gokuldham Sheri, Bamroli Road, beside Hariom Ind., Vadod, Surat.",
     event: { title: "Satkar Samarambh (Reception)", time: "Saturday, 12-12-2026 · 6:30 PM", note: "Shri Bavan Bavis Kadva Patidar Samaj Wadi, Amijhara-Bamroli, Surat" },
-    place: { event: "Satkar Samarambh (Reception)", name: "Shri Bavan Bavis Kadva Patidar Samaj Wadi", place: "Hariom Ind. Society-3, behind Shri Umiya Mataji Mandir, Amijhara-Bamroli, Surat", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "" },
+    place: { event: "Satkar Samarambh (Reception)", name: "Shri Bavan Bavis Kadva Patidar Samaj Wadi", place: "Hariom Ind. Society-3, behind Shri Umiya Mataji Mandir, Amijhara-Bamroli, Surat", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "https://maps.app.goo.gl/7fJrXMhaiRdt4sFa7" },
   },
   footer: { title: "Charmin & Krupali", welcome: "The Chhaganbha family warmly welcomes you." },
 };
