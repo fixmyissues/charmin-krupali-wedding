@@ -9,7 +9,7 @@ export const gu = {
   switchTo: { href: "/", label: "English", lang: "en" },
   gate: { label: "કંકુ દબાવી રાખો", seal: "ચા|કૃ", title: "શુભ વિવાહ", hint: "કંકોતરી ખોલવા કંકુ દબાવી રાખો", line: "શુભ લગ્ન નિમંત્રણ", button: "કંકોતરી ખોલો", skip: "છોડો", done: "પધારજો, પરિવાર સાથે" },
   countdown: { kicker: "શુભ લગ્નને", title: "મંડપ સુધી", scratch: "સોનેરી વરખ ઘસો" },
-  dock: { rsvp: "જવાબ", events: "પ્રસંગો", music: "સંગીત", share: "શેર" },
+  dock: { events: "પ્રસંગો", music: "સંગીત", share: "શેર" },
   hero: {
     top: "॥ શ્રી ગણેશાય નમઃ ॥ શ્રી ઉમિયા માતાય નમઃ ॥",
     names: ["ચિ. ચાર્મિન", "ચિ. કૃપાલિ"], weds: "ના શુભ લગ્ન", date: "૦૬-૧૨-૨૦૨૬, રવિવાર",
@@ -45,17 +45,11 @@ export const gu = {
     title: "નિમંત્રક", address: "મુ. રામપુરા (કાંસા), તા. વિસનગર, જિ. મહેસાણા", phone: "મો.",
     families: [["શ્રી ચતુરભાઈ દ્વારકાદાસ પટેલ", "સ્વ. ડાહીબેન ચતુરભાઈ પટેલ"], ["શ્રી કમલેશભાઈ ચતુરભાઈ પટેલ", "અ.સૌ. અલ્પાબેન કમલેશભાઈ પટેલ"]],
   },
-  rsvp: {
-    title: "આપનો જવાબ", name: "આપનું નામ", contact: "મોબાઇલ અથવા ઇમેઇલ", attending: "આપ પધારશો?", yes: "હા, જરૂર", no: "ના, માફ કરશો",
-    guests: "કુલ સભ્યો", message: "સંદેશ", send: "જવાબ મોકલો",
-    wa: { head: "ચિ. ચાર્મિન & ચિ. કૃપાલિ ના શુભ લગ્ન માટે જવાબ", name: "નામ", contact: "સંપર્ક", attending: "પધારશો", guests: "કુલ સભ્યો", message: "સંદેશ" },
-  },
   // Shown only on /reception pages, for guests invited to the Surat reception.
   reception: {
     title: "સત્કાર સમારંભ", heroDate: "૧૨-૧૨-૨૦૨૬, શનિવાર", date: "૧૨ ડિસેમ્બર ૨૦૨૬",
     lines: ["શનિવાર, સાંજે ૬:૩૦ કલાકે", "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી, અમીઝરા-બમરોલી, સુરત"],
     blessing: "સાથેના લગ્ન પ્રસંગ નિમિત્તે યોજેલ “સત્કાર સમારંભમાં” નવદંપતિને અંતરના આશીર્વાદ આપવા પધારવા ભાવભીનું નિમંત્રણ છે.",
-    rsvpHead: "ચિ. ચાર્મિન & ચિ. કૃપાલિ ના સત્કાર સમારંભ માટે જવાબ",
     address: "૪૭, અમીઝરા રેસીડેન્સી, ગોકુલધામ શેરી, બમરોલી રોડ હરિઓમ ઈન્ડ. બાજુમાં વડોદ સુરત.",
     event: { title: "સત્કાર સમારંભ", time: "શનિવાર, ૧૨-૧૨-૨૦૨૬ · સાંજે ૬:૩૦", note: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી, અમીઝરા-બમરોલી, સુરત" },
     place: { event: "સત્કાર સમારંભ", name: "શ્રી બાવન બાવીસ કડવા પાટીદાર સમાજની વાડી", place: "હરિઓમ ઈન્ડ. સોસાયટી-૩, શ્રી ઉમિયા માતાજી મંદિરની પાછળ, અમીઝરા-બમરોલી, સુરત", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "https://maps.app.goo.gl/7fJrXMhaiRdt4sFa7" },
@@ -71,7 +65,7 @@ export const en: Content = {
   switchTo: { href: "/gu", label: "ગુજરાતી", lang: "gu" },
   gate: { label: "Press and hold the kanku", seal: "C|K", title: "Shubh Vivah", hint: "Press and hold the kanku to open the kankotri", line: "Shubh lagna nimantran", button: "Open the kankotri", skip: "Skip", done: "Padharo, come as family" },
   countdown: { kicker: "Shubh lagna in", title: "Until the mandap", scratch: "Scratch the gold leaf" },
-  dock: { rsvp: "RSVP", events: "Events", music: "Music", share: "Share" },
+  dock: { events: "Events", music: "Music", share: "Share" },
   hero: {
     top: "॥ Shri Ganeshaya Namah ॥ Shri Umiya Mataye Namah ॥",
     names: ["Charmin", "Krupali"], weds: "together in marriage", date: "Sunday, 06-12-2026",
@@ -107,16 +101,10 @@ export const en: Content = {
     title: "Invited by", address: "Ramapura (Kansa), Taluka Visnagar, District Mehsana", phone: "Mobile:",
     families: [["Shri Chaturbhai Dwarkadas Patel", "Late Dahiben Chaturbhai Patel"], ["Shri Kamleshbhai Chaturbhai Patel", "Smt. Alpaben Kamleshbhai Patel"]],
   },
-  rsvp: {
-    title: "Your Reply", name: "Your name", contact: "Mobile or email", attending: "Will you attend?", yes: "Yes, with joy", no: "Sorry, can't make it",
-    guests: "Number of guests", message: "Message", send: "Send reply",
-    wa: { head: "RSVP for the wedding of Charmin & Krupali", name: "Name", contact: "Contact", attending: "Attending", guests: "Guests", message: "Message" },
-  },
   reception: {
     title: "Satkar Samarambh", heroDate: "Saturday, 12-12-2026", date: "12 December 2026",
     lines: ["Saturday, 6:30 PM", "Shri Bavan Bavis Kadva Patidar Samaj Wadi, Amijhara-Bamroli, Surat"],
     blessing: "You are warmly invited to the “Satkar Samarambh” held on the occasion of the wedding, to bless the newly wed couple with your presence.",
-    rsvpHead: "RSVP for the Satkar Samarambh of Charmin & Krupali",
     address: "47, Amijhara Residency, Gokuldham Sheri, Bamroli Road, beside Hariom Ind., Vadod, Surat.",
     event: { title: "Satkar Samarambh (Reception)", time: "Saturday, 12-12-2026 · 6:30 PM", note: "Shri Bavan Bavis Kadva Patidar Samaj Wadi, Amijhara-Bamroli, Surat" },
     place: { event: "Satkar Samarambh (Reception)", name: "Shri Bavan Bavis Kadva Patidar Samaj Wadi", place: "Hariom Ind. Society-3, behind Shri Umiya Mataji Mandir, Amijhara-Bamroli, Surat", query: "Shri+Bavan+Bavis+Kadva+Patidar+Samaj+Wadi+Hariom+Industrial+Society+3+Amijhara+Bamroli+Surat", link: "https://maps.app.goo.gl/7fJrXMhaiRdt4sFa7" },

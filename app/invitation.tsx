@@ -6,8 +6,6 @@ import type { Content } from "./content";
 
 const WEDDING_DATE = new Date("2026-12-06T10:00:00+05:30").getTime();
 const RECEPTION_DATE = new Date("2026-12-12T18:30:00+05:30").getTime();
-// Add a WhatsApp number in international format, without +, spaces or dashes. Empty lets the guest pick a chat.
-const WHATSAPP_NUMBER = "";
 const PHONES = ["9909145335", "7069996588", "9016184664", "9925362343"];
 // The reception card prints only three numbers.
 const RECEPTION_PHONES = ["9909145335", "7069996588", "9925362343"];
@@ -178,20 +176,6 @@ export default function Invitation({ t, mode = "wedding" }: { t: Content; mode?:
     else navigator.clipboard?.writeText(location.href);
   }
 
-  function sendRsvp(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const f = new FormData(e.currentTarget), w = only ? { ...t.rsvp.wa, head: t.reception.rsvpHead } : t.rsvp.wa;
-    const text = [
-      w.head,
-      `${w.name}: ${f.get("name")}`,
-      `${w.contact}: ${f.get("contact")}`,
-      `${w.attending}: ${f.get("attending")}`,
-      `${w.guests}: ${f.get("guests")}`,
-      f.get("message") ? `${w.message}: ${f.get("message")}` : "",
-    ].filter(Boolean).join("\n");
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
-  }
-
   const mono = <>{s1}<i>&amp;</i>{s2}</>;
 
   return (
@@ -292,21 +276,6 @@ export default function Invitation({ t, mode = "wedding" }: { t: Content; mode?:
         <iframe className="map" title={t.venue.mapTitle} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={`https://www.google.com/maps?q=${t.venue.places[0].query}&z=17&output=embed`}/>
       </div></section>
 
-      <section id="rsvp" className="rsvp-sec"><div className="w">
-        <h2>{t.rsvp.title}</h2>
-        <form onSubmit={sendRsvp}>
-          <label>{t.rsvp.name}<input name="name" required autoComplete="name"/></label>
-          <label>{t.rsvp.contact}<input name="contact" required/></label>
-          <fieldset className="choice"><legend>{t.rsvp.attending}</legend>
-            <label><input type="radio" name="attending" value={t.rsvp.yes} required/> {t.rsvp.yes}</label>
-            <label><input type="radio" name="attending" value={t.rsvp.no}/> {t.rsvp.no}</label>
-          </fieldset>
-          <label>{t.rsvp.guests}<select name="guests">{["1", "2", "3", "4", "5+"].map((g) => <option key={g}>{g}</option>)}</select></label>
-          <label>{t.rsvp.message}<textarea name="message" rows={3}/></label>
-          <button className="btn" type="submit">{t.rsvp.send}</button>
-        </form>
-      </div></section>
-
       <footer className="finale"><div>
         <div className="kanku" aria-hidden="true"><i/><i/><i/></div>
         <p>{t.footer.welcome}</p>
@@ -314,7 +283,6 @@ export default function Invitation({ t, mode = "wedding" }: { t: Content; mode?:
       </div></footer>
 
       <nav className={`dock${gateGone ? " on" : ""}`}>
-        <a className="pri" href="#rsvp">{t.dock.rsvp}</a>
         {!only && <a href="#events">{t.dock.events}</a>}
         <button type="button" onClick={() => toggleMusic()} aria-pressed={music}><span className={`eq${music ? " on" : ""}`}><i/><i/><i/></span>{t.dock.music}</button>
         <button type="button" onClick={share} aria-label={t.dock.share}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg></button>
